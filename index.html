@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Netflix Clone</title>
+</head>
+
+
+<body>
+    <!-- header -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img src="img/netflix-logo.png" alt="netflix logo" class="logo">
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <!-- <img class="profile-picture" src="img/profile.jpg" alt="">-->
+                <div class="profile-text-container">
+                      <input type="text" id="searchInput" placeholder="Search...">
+                        <div id="searchResults"></div>
+                </div> 
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fas fa-search">
+        </i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+
+    
+    <div class="Banner">
+        <div class="banner_contents">
+            <h1 class="banner-tittle">Money Heist</h1>
+            <div class="banner_buttons">
+                <button class="banner_button">Play</button>
+                <button class="banner_button">My List</button>
+            </div>
+            <div class="banner_description">
+                To carry out the biggest heist in history, a mysterios man called The Professor recruits
+                a band of eight robbers who have a single characteristics: n...
+            </div>
+        </div>
+        <div class="banner--fadeBottom"></div>
+    </div>
+
+    <div class="container">
+        <div class="content-container">
+             <!--  <div class="featured-content">
+                <img class="featured-title" src="img/f-t-1.png" alt="">
+                <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
+                    deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
+                    minima voluptatibus incidunt. Accusamus, provident.</p>
+                <button class="featured-button">WATCH</button>
+             </div> -->
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Depressed because of his impending divorce from his childhood sweetheart Catherine, Theodore purchases an operating system upgrade that includes a virtual assistant with artificial intelligence, designed to adapt and evolve. He decides that he wants the A.I. to have a feminine voice, and she names herself Samantha.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpg" alt="">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">A space opera set “a long time ago in a galaxy far, far away,” the film centres on Luke Skywalker (played by the then relatively unknown Mark Hamill), a young man who finds himself embroiled in an interplanetary war between an authoritarian empire and rebel forces.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                            <span class="movie-list-item-title">Storm</span>
+                            <p class="movie-list-item-desc">a disturbance of the normal condition of the atmosphere, manifesting itself by winds of unusual force or direction, often accompanied by rain, snow, hail, thunder, and lightning, or flying sand or dust. a heavy fall of rain, snow, or hail, or a violent outbreak of thunder and lightning, unaccompanied by strong winds.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                            <span class="movie-list-item-title">1917</span>
+                            <p class="movie-list-item-desc">Two young British soldiers during the First World War are given an impossible mission: deliver a message deep in enemy territory that will stop 1,600 men, and one of the soldiers' brothers, from walking straight into a deadly trap.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                            <span class="movie-list-item-title">Avengers</span>
+                            <p class="movie-list-item-desc">Earth's Mightiest Heroes stand as the planet's first line of defense against the most powerful threats in the universe. The Avengers began as a group of extraordinary individuals who were assembled to defeat Loki and his Chitauri army in New York City.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6.jpg" alt="">
+                            <span class="movie-list-item-title">Rampage</span>
+                            <p class="movie-list-item-desc">Synopsis Primatologist Davis Okoye shares an unshakable bond with George, an extraordinarily intelligent, silverback gorilla that's been in his care since birth. When a rogue genetic experiment goes wrong, it causes George, a wolf and a reptile to grow to a monstrous size.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                            <span class="movie-list-item-title">Mortal Kombat</span>
+                            <p class="movie-list-item-desc">Synopsis In "Mortal Kombat," MMA fighter Cole Young, accustomed to taking a beating for money, is unaware of his heritage--or why Outworld's Emperor Shang Tsung has sent his best warrior, Sub-Zero, an otherworldly Cryomancer, to hunt Cole down.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">TRENDING</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/small-movie1.jpg" alt="">
+                            <span class="movie-list-item-title">Without Remorse</span>
+                            <p class="movie-list-item-desc">An elite Navy SEAL uncovers an international conspiracy while seeking justice for the murder of his pregnant wife in Tom Clancy's Without Remorse, the explosive origin story of action hero John Clark - one of the most popular characters in author Tom Clancy's Jack Ryan universe.
+                            </p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/small-movie2.jpg" alt="">
+                            <span class="movie-list-item-title">Godzilla vs King Kong</span>
+                            <p class="movie-list-item-desc">Kong and his protectors undertake a perilous journey to find his true home, and with them is Jia, a young orphaned girl with whom he has formed a unique and powerful bond. But they unexpectedly find themselves in the path of an enraged Godzilla, cutting a swath of destruction across the globe.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/small-movie3.jpg" alt="">
+                            <span class="movie-list-item-title">The Mitchells vs The Machines</span>
+                            <p class="movie-list-item-desc">the Machines. A quirky, dysfunctional family's road trip is upended when they find themselves in the middle of the robot apocalypse and suddenly become humanity's unlikeliest last hope.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/small-movie4.jpg" alt="">
+                            <span class="movie-list-item-title">Marvel</span>
+                            <p class="movie-list-item-desc">Synopsis Captain Marvel is an extraterrestrial Kree warrior who finds herself caught in the middle of an intergalactic battle between her people and the Skrulls. Living on Earth in 1995, she keeps having recurring memories of another life as U.S. Air Force pilot Carol Danvers.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/small-movie5.jpg" alt="">
+                            <span class="movie-list-item-title">Nobody</span>
+                            <p class="movie-list-item-desc">The film, which stars Bob Odenkirk, Connie Nielsen, Aleksey Serebryakov, RZA, and Christopher Lloyd, follows a mild-mannered family man who returns to his former life of an assassin after he and his family become the target of a vengeful crime lord. Odenkirk and David Leitch are among the film's producers.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/small-movie6.jpg" alt="">
+                            <span class="movie-list-item-title">Nobody</span>
+                            <p class="movie-list-item-desc">The story revolves around a young Comanche woman, Naru, who is striving to prove herself as a hunter. She finds herself having to protect her people from a vicious, humanoid alien that hunts humans for sport, as well as from French fur traders who are destroying the buffalo they rely on for survival.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/small-movie7.jpg" alt="">
+                            <span class="movie-list-item-title">luis miguel</span>
+                            <p class="movie-list-item-desc">As his career skyrockets, Luis Miguel struggles with his family life amidst a string of betrayals, heartbreaking revelations and a crushing loss.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-2.jpg');">
+                <img class="featured-title" src="img/f-t-2.png" alt="">
+                <p class="featured-desc">The story revolves around a young Comanche woman, Naru, who is striving to prove herself as a hunter. She finds herself having to protect her people from a vicious, humanoid alien that hunts humans for sport, as well as from French fur traders who are destroying the buffalo they rely on for survival.</p>
+                <button class="featured-button">WATCH</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">SERIES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/large-movie1.jpg" alt="">
+                            <span class="movie-list-item-title">luis miguel</span>
+                            <p class="movie-list-item-desc">As his career skyrockets, Luis Miguel struggles with his family life amidst a string of betrayals, heartbreaking revelations and a crushing loss.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/large-movie2.jpg" alt="">
+                            <span class="movie-list-item-title">Lucifer</span>
+                            <p class="movie-list-item-desc">Summaries. A political Godfather dies and a lot of thieves dressed up as politicians took over the rule. Question arises regarding the successor of the God, unfolding few names, along with the God's most beloved angel, Lucifer.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/large-movie3.jpg" alt="">
+                            <span class="movie-list-item-title">Haunted latin america</span>
+                            <p class="movie-list-item-desc">The promise of a new place turns into sheer terror when a single mother discovers malignant entities in her home that want to hurt her family.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/large-movie4.jpg" alt="">
+                            <span class="movie-list-item-title">The Gentlemen</span>
+                            <p class="movie-list-item-desc">Born into poverty in the U.S., Pearson won a Rhodes scholarship to Oxford, where he began selling marijuana before dropping out and building his criminal empire. He now plans to sell his business to American billionaire Matthew Berger for £400m and retire peacefully with his wife, Rosalind.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/large-movie5.jpg" alt="">
+                            <span class="movie-list-item-title">G.G</span>
+                            <p class="movie-list-item-desc">Following an unpleasant run in at the beach, teenagers Oscar and Iben are left behind by their friends. When one of them makes a friendly gesture, they experience what might be the beginning of an unexpected relationship.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/large-movie6.jpg" alt="">
+                            <span class="movie-list-item-title">TIT</span>
+                            <p class="movie-list-item-desc">Following an unpleasant run in at the beach, teenagers Oscar and Iben are left behind by their friends. When one of them makes a friendly gesture, they experience what might be the beginning of an unexpected relationship.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/small-movie7.jpg" alt="">
+                            <span class="movie-list-item-title">Nobody</span>
+                            <p class="movie-list-item-desc">The film, which stars Bob Odenkirk, Connie Nielsen, Aleksey Serebryakov, RZA, and Christopher Lloyd, follows a mild-mannered family man who returns to his former life of an assassin after he and his family become the target of a vengeful crime lord. Odenkirk and David Leitch are among the film's producers.a</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">RECOMMENDED CONTENT</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/17.jpg" alt="">
+                            <span class="movie-list-item-title">aquaman</span>
+                            <p class="movie-list-item-desc">Directed by James Wan from a screenplay by David Leslie Johnson-McGoldrick and Will Beall, it stars Jason Momoa as Arthur Curry / Aquaman, who sets out to lead the underwater kingdom of Atlantis and stop his half-brother, King Orm (Patrick Wilson) from uniting the seven underwater kingdoms to destroy the surface world.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/18.jpg" alt="">
+                            <span class="movie-list-item-title">dragon cry</span>
+                            <p class="movie-list-item-desc">Synopsis Natsu and his friends travel to the island kingdom of Stella to find dark secrets, fight new enemies and save the world from destruction.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/19.jpg" alt="">
+                            <span class="movie-list-item-title">Spider Man No Way Home</span>
+                            <p class="movie-list-item-desc">Synopsis. After Quentin Beck (Jake Gyllenhaal) frames Peter Parker (Tom Holland) for murder and reveals his identity as Spider-Man, Parker, his girlfriend Michelle "MJ" Jones-Watson (Zendaya), best friend Ned Leeds (Jacob Batalon), and Aunt May (Marisa Tomei) are interrogated by the Department of Damage Control.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                            <span class="movie-list-item-title">Star war</span>
+                            <p class="movie-list-item-desc">Set "a long time ago" in a fictional galaxy ruled by the tyrannical Galactic Empire, the story follows a group of freedom fighters known as the Rebel Alliance, who aim to destroy the Empire's newest weapon, the Death Star.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/large-movie6.jpg" alt="">
+                            <span class="movie-list-item-title">TIT</span>
+                            <p class="movie-list-item-desc">Following an unpleasant run in at the beach, teenagers Oscar and Iben are left behind by their friends. When one of them makes a friendly gesture, they experience what might be the beginning of an unexpected relationship.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/large-movie7.jpg" alt="">
+                            <span class="movie-list-item-title">Transformer</span>
+                            <p class="movie-list-item-desc">The fate of humanity is at stake when two races of robots, the good Autobots and the villainous Decepticons, bring their war to Earth. The robots have the ability to change into different mechanical objects as they seek the key to ultimate power.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/large-movie8.jpg" alt="">
+                            <span class="movie-list-item-title">G.G</span>
+                            <p class="movie-list-item-desc">Born into poverty in the U.S., Pearson won a Rhodes scholarship to Oxford, where he began selling marijuana before dropping out and building his criminal empire. He now plans to sell his business to American billionaire Matthew Berger for £400m and retire peacefully with his wife, Rosalind.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
